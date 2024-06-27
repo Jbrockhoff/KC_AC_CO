@@ -3,9 +3,9 @@ import Card from 'react-bootstrap/Card';
 
 function Services() {
   return (
-    <div>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" src="assets/burners.jpg" style={{ height: '200px', objectFit: 'cover' }} />
         <Card.Body>
           <Card.Title>Heating</Card.Title>
           <Card.Text>
@@ -17,7 +17,7 @@ function Services() {
       </Card>
 
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" src="assets/ac.jpg" style={{ height: '200px', objectFit: 'cover' }} />
         <Card.Body>
           <Card.Title>Cooling</Card.Title>
           <Card.Text>
@@ -29,9 +29,9 @@ function Services() {
       </Card>
 
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" src="assets/maintenance.jpg" style={{ height: '200px', objectFit: 'cover' }} />
         <Card.Body>
-          <Card.Title>Preventatice Maintence</Card.Title>
+          <Card.Title>Preventative Maintenance</Card.Title>
           <Card.Text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
