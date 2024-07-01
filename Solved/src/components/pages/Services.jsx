@@ -1,7 +1,19 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function Services() {
+function Services({ handlePageChange }) {
+  const handleHeatingClick = () => {
+    handlePageChange('Heating');
+  };
+
+  const handleCoolingClick = () => {
+    handlePageChange('Cooling');
+  };
+
+  const handleMaintenanceClick = () => {
+    handlePageChange('Maintenance')
+  };
+
   return (
     <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Card style={{ width: '18rem' }}>
@@ -12,7 +24,7 @@ function Services() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="primary" onClick={handleHeatingClick}>Go to Heating</Button>
         </Card.Body>
       </Card>
 
@@ -24,7 +36,7 @@ function Services() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="primary" onClick={handleCoolingClick}>Go to Cooling</Button>
         </Card.Body>
       </Card>
 
@@ -36,7 +48,7 @@ function Services() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="primary" onClick={handleMaintenanceClick}>Go to Maintenance</Button>
         </Card.Body>
       </Card>
     </div>
