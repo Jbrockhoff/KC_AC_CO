@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import NavTabs from './NavTabs';
 import Home from './pages/Home';
-import Gallery from './pages/Gallery';
+import Coupons from './pages/Coupons';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Heating from './pages/Heating'; 
@@ -15,8 +15,8 @@ export default function PageContainer() {
     if (currentPage === 'Home') {
       return <Home />;
     }
-    if (currentPage === 'Gallery') {
-      return <Gallery />;
+    if (currentPage === 'Coupons') {
+      return <Coupons />;
     }
     if (currentPage === 'Services') {
       return <Services handlePageChange={handlePageChange} />;
